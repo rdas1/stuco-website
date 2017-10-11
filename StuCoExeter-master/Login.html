@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+    <title>Modern Business - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    
+    <link rel="stylesheet prefetch" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="Login.css">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+	 <!-- <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-database.js"></script>
+	<script>
+	// Initialize Firebase
+	// TODO: Replace with your project's customized code snippet
+	var config = {
+		apiKey: "AIzaSyC6oNZEpNUBjPiz3-DuMe0ayVlPqo8YpXI",
+		authDomain: "student-council-website.firebaseapp.com",
+		databaseURL: "https://student-council-website.firebaseio.com",
+		storageBucket: "student-council-website.appspot.com",
+	};
+	firebase.initializeApp(config);
+	</script> -->
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	
+	
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h4 style = "color: white; line-height: 3px; position: relative; top: 8px">Phillips Exeter Academy
+                	<span class="emblem">
+                		<img src="imgres.png" alt="school emblem" style=	"width: 50px; height: 40px; float:                        left; position: relative; bottom: 13px;"> 
+                	</span>
+                </h4>
+                
+    			<h5 style = "color: white; line-height: 3px;position: relative; top: 10px"> Student Council</h5>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" style = "position: static;">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Updates<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="News.html">News</a>
+                            </li>
+                            <li>
+                                <a href="Events.html">Events</a>
+                            </li>
+                            <li>
+                                <a href="Legislation.html">Legislation</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="Committees.html">Committees</a>
+                        
+                    <li>
+                        <a href="Constitution.html">Constitution</a>
+                    </li>
+                   <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i><b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="Motion Box.html">Motion Box</a>
+                            </li>
+                            <li>
+                                <a href="studentinfo.html">Student Information</a>
+                            </li>
+                            <li>
+                                <a href="FeedbackCenter.html">Feedback Center</a>
+                            </li>
+                            <li>
+                                <a href="Stuco_Documents.html">Stuco Documents</a>
+                            </li>
+                        </ul>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	
+    <div class = "container">
+		
+ 
+        
+        <div class="login-form">
+     <h2>Login</h2>
+     <div class="form-group ">
+       <input type="text" class="form-control" placeholder="Username " id="UserName">
+       <i class="fa fa-user"></i>
+     </div>
+     <div class="form-group log-status">
+       <input type="password" class="form-control" placeholder="Password" id="Passwod">
+       <i class="fa fa-lock"></i>
+     </div>
+      <span class="alert">Invalid Credentials</span>
+      <a class="link" href="#">Lost your password?</a>
+     <button type="button" class="log-btn" >Log in</button>
+     <br>
+     <br>
+     <h4>Or</h4>
+     
+    
+     
+     <h2>Sign Up</h2>
+     <div class="form-group ">
+       <input type="text" class="form-control" placeholder="Username " id="UserName">
+       <i class="fa fa-user"></i>
+     </div>
+      <span class="alert">Invalid Credentials</span>
+     <button type="button" class="log-btn" >Sign up</button>
+     <p></p>
+     
+   </div>
+   
+   <hr>
+   
+   <div class = "row">
+        <div class="col-lg-12" align = "middle">
+        <a target="_blank" title="follow us on facebook" href="https://www.facebook.com/PEAStuCo/"> <img alt="follow us on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png" style= "padding-right:10px"></a>	
+        <a target="_blank" title="follow us on Twitter" href="https://twitter.com/PhillipsExeter"><img alt="follow us on twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter40x40.png" style= "padding-left: 10px; padding-right: 10px;"></a>		
+        <a target="_blank" title="follow us on instagram" href="https://www.instagram.com/pea_stuco/"><img alt="follow us on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram40x40.png" style="padding-left:10px"></a>
+</div>
+</div>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p style = "text-align: center;">Copyright &copy; Jackson Parell 2016, Photography by Rachel Luo</p>
+                </div>
+            </div>
+        </footer>
+   
+   </div>
+   
+   
+         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+        <script src="Login.js"></script>
+        
+		<script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+		
+    
+    </html>
